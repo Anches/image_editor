@@ -1,0 +1,559 @@
+body{
+    background-image: url(../image/fon.gif);
+    background-attachment: relative;
+    background-repeat: no-repeat;
+
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6 */
+    background-size: 100%;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-1{
+    position: fixed;
+    display: flex;    
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    height: 70px;
+    z-index: 1000;
+    justify-content: space-around;
+}
+
+.container-1-color{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.color-a{
+  color: white;
+}
+
+.container-1-color-a{
+    color: white;
+}
+
+.container-1 a{
+    font-family: Geogrotesque;    
+    font-size: x-large; 
+    text-decoration: none;
+    background-image: linear-gradient(#df1ae6,#df1ae6);
+    background-repeat: no-repeat;
+    background-position: 0% 100%;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+.container-1 a:hover{
+    background-size: 100% 2px;   
+}
+
+.zag1{
+  font-family: Rosalinda Regular;
+  font-size: 80px;
+  color: white;  
+  text-align: center;
+  margin: 0;
+  padding-top: 12%;
+}
+
+.zag{
+  -moz-font-family: Rosalinda Regular; /* Firefox 3.6+ */
+  -webkit-font-family: Rosalinda Regular; /* Safari 3.1+ и Chrome 4.0+ */
+  -o-font-family: Rosalinda Regular; /* Opera 9.6 */
+
+    font-family: Rosalinda Regular;
+    font-size: 70px;
+    color: white;  
+    text-align: center;
+    margin: 0;
+    padding-top: 0%;
+    padding-bottom: 4%;    
+}
+
+.container-3{
+    display: flex;    
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 25%;
+}
+
+.container-3 a{
+    font-family: Geogrotesque;
+    font-size: x-large;
+    color: white;  
+    text-decoration: none;
+    border: 1px solid white;    
+    padding: 10px;
+}
+
+.container-3 a:hover{
+    border-radius: 30px;
+    color: white;
+    border-color: white;
+    background-color: rgb(223, 26, 230, 0.4);
+    transition: border-radius .2s;
+}
+
+.btnup{
+  width: 3%;
+  position: fixed;
+  padding: 0;
+  margin-left: 95%;
+  margin-top: -25%;
+  z-index: 1000;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.btnup:hover{
+  opacity: 1;
+}
+
+.show{
+  opacity: 0.5;
+}
+
+.container-4{
+  padding-bottom: 10%;
+}
+
+.container-4 .comm{
+  text-align: center;
+  font-family: Rosalinda Regular;
+  font-size: 50px;
+  margin: 0;
+  padding-top: 12%;
+
+
+}
+.comm a{
+  text-decoration: none;
+  background-image: linear-gradient(#df1ae6,#df1ae6);
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+  background-size: 0% 2px;
+  transition: background-size .3s;
+}
+
+.comm a:hover{
+  background-size: 100% 2px;
+}
+
+.commentsblock {
+  text-align: center;
+  font-family: Geogrotesque;
+  font-size: large;
+  margin: 0;
+  padding: 2%;
+  padding-bottom: 0;
+  margin-left: 35%;
+  margin-right: 35%;
+  margin-bottom: 2%;
+  background-color: none;
+  border: 2px solid rgb(80, 12, 133);
+
+}
+
+
+.name_date, .comment{
+  text-align: center;
+  font-family: Geogrotesque;
+  font-size: large;
+  margin: 0;
+  padding: 0.5%;  
+}
+
+/*ФУТЕР!*/
+
+.footer{
+  background-color: rgb(24, 23, 31);
+  margin: 0;
+
+}
+
+.bloks{
+  display: flex;
+  flex: 0 0 180px;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  color: white;
+  font-family: Geogrotesque;
+  font-size: x-large;
+  flex-wrap: wrap;
+}
+
+.bloks p{
+  text-align: center;
+  width: 30%;
+  margin: 0;
+  padding: 0.5%;
+}
+
+.bloks{
+  padding: 2%;
+}
+
+.bloks a{
+  text-align: center;
+  width: 30%;
+  margin: 0;
+  padding: 0.5%;
+  font-size: large;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(#df1ae6,#df1ae6);
+  background-position: 0% 100%;
+  background-size: 0% 2px;
+  transition: background-size .3s;
+}
+
+.bloks a:hover{
+  background-size: 100% 2px;
+}
+
+.bacj{
+  color: white;
+  font-family: Geogrotesque;
+  font-size: medium;
+  padding: 3%;
+  margin: 0;
+}
+
+.icon{
+  width: 30px;
+  height: 30px;
+  float: right;
+  margin-left: 2%;
+  padding: 0;
+}
+
+
+
+
+/*НАСТРОЙКА СЛАЙДЕРА*/
+
+
+
+ /* стили основного контейнера слайдера */
+ .slider {
+    position: relative;
+    overflow: hidden;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* стили для обёртки, в которой заключены слайды */
+  .slider__wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* стили для контейнера слайдов */
+  .slider__items {
+    display: flex;
+    text-align: center;
+    transition: transform 0.6s ease;
+  }
+
+  /* стили для слайдов */
+  .slider__item {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  /* стили для кнопок "вперед" и "назад" */
+  .slider__control {
+    position: absolute;
+    top: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    color: #fff;
+    text-align: center;
+    opacity: 0.5;
+    height: 50px;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .slider__control_show {
+    display: flex;
+  }
+
+  .slider__control:hover,
+  .slider__control:focus {
+    color: #fff;
+    text-decoration: none;
+    outline: 0;
+    opacity: 0.9;
+  }
+
+  .slider__control_prev {
+    left: 0;
+  }
+
+  .slider__control_next {
+    right: 0;
+  }
+
+  .slider__control::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+  }
+
+  .slider__control_prev::before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+  }
+
+  .slider__control_next::before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+  }
+
+  /* стили для индикаторов */
+  .slider__indicators {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    left: 0;
+    z-index: 15;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .slider__indicators li {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 30px;
+    height: 4px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-clip: padding-box;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+  }
+
+  .slider__indicators li.active {
+    background-color: black;
+  }
+
+  /* для стилизации текущего слайдера */
+  .img-fluid {
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
+  }
+
+
+/*настройка скроллбара*/
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: rgb(63, 106, 107);
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.6); 
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.6);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.6); 
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.6);
+}
+
+/* END*/
+
+
+@media screen and (max-width: 600px){
+  
+  .container-1{
+    height: 30px;
+  }
+
+  .container-1 a{
+    font-size: x-small;
+    text-align: center;
+  }
+
+  .container-1 a img{
+    width: 30%;
+  }
+
+  .container-2{
+    padding-top: 6%;
+    padding-bottom: 1%;
+  }
+  .zag{
+    font-size: large;
+    padding-bottom: 3%;
+  }
+  .zag1{
+    font-size: large;
+  }
+  .container-3{
+    padding-bottom: 2%;
+  }
+
+  .container-3 a{
+    font-size: small;
+    padding: 5px;
+  }
+
+  .btnup{
+    opacity: 0;
+  }
+
+  .comm{
+    padding-top: 0%;
+  }
+  
+  .slider{
+    max-width: 100%;
+    margin-top: 10%;
+  }
+  
+  .slider__indicators{
+    display: none;
+  }
+  .slider__control{
+    display: none;
+  }
+
+  .container-4 .comm{
+    font-size: x-large;
+    padding-top: 5%;
+  }
+
+  .commentsblock{
+    margin: 3%;   
+}
+
+  .name_date, .comment{
+    font-size: x-small;
+  }
+
+  .bloks{
+    font-size: small;
+  }
+
+  .bloks a{
+    font-size: small;
+  }
+
+  .bacj{
+    font-size: small;
+  }
+  
+  .icon{
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1100px){
+  .container-1{
+    height: 50px;
+  }
+
+  .container-1 a{
+    font-size: medium;
+    text-align: center;
+  }
+
+  .container-1 a img{
+    width: 50%;
+  }
+
+  .container-2{
+    padding-top: 3%;
+    padding-bottom: 1%;
+  }
+  .zag{
+    font-size: 40px;
+    padding-bottom: 2%;
+  }
+  .zag1{
+    font-size: 45px;
+  }
+  .container-3{
+    padding-bottom: 2%;
+  }
+
+  .container-3 a{
+    font-size: medium;
+    padding: 5px;
+  }
+
+  .btnup{
+    opacity: 0;
+  }
+
+  .slider{
+    max-width: 100%;
+    margin-top: 10%;
+  }
+  
+  .slider__indicators{
+    display: none;
+  }
+  .slider__control{
+    display: none;
+  }
+
+  .container-4{
+    padding-top: 5%;
+  }
+
+  .container-4 .comm{
+    font-size: x-large;
+  }
+
+  .commentsblock{
+    margin: 3%;   
+}
+
+  .name_date, .comment{
+    font-size: medium;
+  }
+
+  .bloks{
+    font-size: medium;
+  }
+
+  .bloks a{
+    font-size: medium;
+  }
+
+  .bacj{
+    font-size: medium;
+  }
+  
+  .icon{
+    width: 25px;
+    height: 25px;
+  }
+}

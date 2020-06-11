@@ -1,0 +1,259 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-image: url(../image/fon3.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+  -moz-background-size: 100%; /* Firefox 3.6+ */
+  -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+  -o-background-size: 100%; /* Opera 9.6 */
+  background-size: 100%;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-1{
+
+    display: flex;    
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    height: 70px;
+
+    justify-content: space-around;
+}
+
+.container-1-color{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.color-a{
+  color: white;
+}
+
+.container-1-color-a{
+    color: white;
+}
+
+.container-1 a{
+    font-family: Geogrotesque;    
+    font-size: x-large; 
+    text-decoration: none;
+    background-image: linear-gradient(#df1ae6,#df1ae6);
+    background-repeat: no-repeat;
+    background-position: 0% 100%;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+.container-1 a:hover{
+    background-size: 100% 2px;   
+}
+
+
+
+.box-2{
+    width: 60%;
+    height: 55%;
+    background: rgba(255, 255, 255, 0.7);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7%;
+}
+
+
+.name{
+  font-family: Geogrotesque;
+  font-size: xx-large;
+  margin: 2%;
+  text-align: center;
+}
+
+.inmenu{
+  margin: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.menuimg{
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  padding-bottom: 1%;
+}
+
+.phpmenu{
+  display: none;
+}
+
+ul{
+  list-style-type: none;
+  font-family: Geogrotesque;
+  font-size: large;
+  text-align: center;
+}
+
+ul a{
+  text-decoration: none;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+}
+
+.box-3{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.txtforbal{
+  font-family: Geogrotesque;
+  font-size: x-large;
+}
+
+.enterbal{
+    font-family: Geogrotesque;
+    font-size: xx-large;
+    color: white;
+    background: rgb(82, 81, 81);  
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 40px;
+    width: 40%;
+    margin: 2%;
+    text-align: center;
+    outline: none;  
+    cursor: default; 
+}
+
+.btn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.addbal{    
+    font-family: Geogrotesque;
+    font-size: x-large;
+    color: #df1ae6;
+    background: white;  
+    text-decoration: none;
+    border: 2px solid rgb(184, 184, 184);
+    border-radius: 40px;
+    padding: 10px;
+    width: 20%;
+    margin: 2%;
+    outline: none;
+}
+
+.addbal:hover{
+  background: rgb(139, 139, 139);
+  color: white;
+  border: 2px solid white;
+  transition: .3s;
+}
+
+.modal{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.63);
+}
+
+.modal-content{
+  background: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid white;
+  width: 50%;
+}
+
+.close{
+  float: right;
+  font-size: 28px;
+  color: #aaa;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.addform{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.addtxt{
+  font-family: Geogrotesque;
+  font-size: x-large;
+}
+
+.addform input{
+  font-family: Geogrotesque;
+  font-size: xx-large;
+  color: white;
+  background: rgb(82, 81, 81);  
+  text-decoration: none;
+  border: 2px solid white;
+  border-radius: 40px;
+  width: 40%;
+  margin: 2%;
+  text-align: center;
+  outline: none;  
+  cursor: default; 
+}
+
+.addform button{
+    
+  font-family: Geogrotesque;
+  font-size: x-large;
+  color: #df1ae6;
+  background: white;  
+  text-decoration: none;
+  border: 2px solid rgb(184, 184, 184);
+  border-radius: 40px;
+  padding: 10px;
+  width: 20%;
+  outline: none;
+}
+
+.addform button:hover{
+  background: rgb(139, 139, 139);
+  color: white;
+  border: 2px solid white;
+  transition: .3s;
+}
+
+.addmsg{
+  color: white;
+  text-shadow: 2px 2px 1px red;
+  text-align: center;
+  margin: 1%;
+}
+
+@media(min-width: 601px) and (max-width: 1100px){
+    
+  body{
+      background-size: cover;
+  }
+
+}
+
+
+@media screen and (max-width: 600px){
+  body{
+      background-size: cover;
+  }}
+  
